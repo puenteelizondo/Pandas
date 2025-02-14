@@ -1,0 +1,72 @@
+[
+    {
+        "ID": 1,
+        "Nombre": "Persona_1",
+        "Edad": 53,
+        "Ciudad": "Ciudad B",
+        "Salario": 1535.84
+    },
+    {
+        "ID": 2,
+        "Nombre": "Persona_2",
+        "Edad": 19,
+        "Ciudad": "Ciudad C",
+        "Salario": 1418.35
+    },
+    {
+        "ID": 3,
+        "Nombre": "Persona_3",
+        "Edad": 54,
+        "Ciudad": "Ciudad B",
+        "Salario": 4565.27
+    },
+    {
+        "ID": 4,
+        "Nombre": "Persona_4",
+        "Edad": 21,
+        "Ciudad": "Ciudad C",
+        "Salario": 4098.84
+    },
+    {
+        "ID": 5,
+        "Nombre": "Persona_5",
+        "Edad": 27,
+        "Ciudad": "Ciudad D",
+        "Salario": 1266.69
+    },
+    {
+        "ID": 6,
+        "Nombre": "Persona_6",
+        "Edad": 44,
+        "Ciudad": "Ciudad C",
+        "Salario": 1949.1
+    },
+    {
+        "ID": 7,
+        "Nombre": "Persona_7",
+        "Edad": 23,
+        "Ciudad": "Ciudad B",
+        "Salario": 3656.3
+    },
+    {
+        "ID": 8,
+        "Nombre": "Persona_8",
+        "Edad": 64,
+        "Ciudad": "Ciudad D",
+        "Salario": 1933.04
+    },
+    {
+        "ID": 9,
+        "Nombre": "Persona_9",
+        "Edad": 55,
+        "Ciudad": "Ciudad D",
+        "Salario": 4394.55
+    },
+    {
+        "ID": 10,
+        "Nombre": "Persona_10",
+        "Edad": 48,
+        "Ciudad": "Ciudad D",
+        "Salario": 2282.95
+    }
+]
