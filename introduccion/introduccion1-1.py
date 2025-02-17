@@ -11,6 +11,3 @@ myvar = pd.DataFrame(mydataset)
 print(myvar)
 #anexo la imagen con su respectivo acomodo del diccionario en el dataframe
 
-
-#sirve para ver la version de panda
-print(pd.__version__)

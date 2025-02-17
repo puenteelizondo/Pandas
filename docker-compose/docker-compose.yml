@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver-container
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "YourPassword"
+      ACCEPT_EULA: "Y"
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "YourPassword", "-Q", "SELECT 1"]
+      interval: 10s
+      retries: 5
+      start_period: 20s
+    networks:
+      - mynetwork
+
+  fastapi:
+    build: .
+    container_name: fastapi-container
+    ports:
+      - "8000:8000"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    environment:
+      - DATABASE_URL=mssql+pymssql://sa:YourPassword@sqlserver:1433/YourDatabase
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
